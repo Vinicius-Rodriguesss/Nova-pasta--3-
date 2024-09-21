@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --font-tech: "Poppins", sans-serif;
+}
+
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #ededed8d;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #0e1a38;
+}
+
+
+body {
+  background-color: #0e1a38;
+  font-family: var(--font-tech);
+  overflow-x: hidden;
+}
+
+/*************************************************************
+DADOS
+*********************************************************/
+
+
+
+.container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dados h1 {
+  font-weight: 900;
+  font-size: 48px;
+  color: #C4D1EC;
+}
+
+.dados h2 {
+  position: relative;
+  top: -10px;
+  left: 6px;
+  font-weight: 700;
+  color: #C4D1EC;
+  font-size: 29px;
+}
+
+.dados p {
+  max-width: 380px;
+  position: relative;
+  font-size: 20px;
+  top: -2px;
+  left: 6px;
+  color: #C4D1EC;
+}
+
+.redes {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+
+.redes img {
+  width: 40px;
+  margin-right: 10px;
+  opacity: 80%;
+  filter: invert();
+  transition: opacity .7s;
+}
+
+.redes img:hover {
+  opacity: 100%;
+}
+
+
+
+.line-projects {
+  color: white;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  overflow: hidden;
+  z-index: 9999 !important;
+}
+
+.bloco {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+
+}
+
+
+
+main {
+  z-index: 999 !important;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  right: 3px;
+}
+
+.icon-empresa {
+  max-width: 250px;
+  min-height: 50px;
+  background-image: url(./assets/Captura\ de\ tela\ 2024-08-15\ 232206.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.links {
+  gap: 20px;
+}
+
+.tempo {
+  background-color: #0e1a38;
+  padding: 5px 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 3px solid;
+  cursor: pointer;
+}
+
+.funcao {
+  background-color: #0e1a38;
+  padding: 5px 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 3px solid;
+  cursor: pointer;
+}
+
+.em-andamento {
+  background-color: rgb(13, 216, 13);
+  ;
+  position: relative;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/*******************************************
+Projetos
+*****************************************/
+
+.projeotos img {
+  width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+
+/*******************************************
+skrill
+*****************************************/
+
+.skrill img {
+  width: 13%;
+  filter: invert(1);
+  opacity: 80%;
+  transition: all 0.3s;
+}
+
+.skrill img:hover {
+  width: 15%;
+  opacity: 100%;
+}
+
+.skrill {
+  position: relative;
+  width: 100%;
+  top: 20px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*********************************
+Dados Movimentado
+**********************************/
+
+.dados {
+  position: fixed !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 270px;
+    top: 18vh;
+    transition: all 2s;
+
+}
+
+/*********************************
+Bg Movimentado
+**********************************/
+
+.bg-moving {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  position: fixed !important;
+  z-index: -99999 !important;
+}
+
+.bloc2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #C4D1EC;
+  position: absolute;
+  top: 100px;
+  margin: 40px;
+  transform: rotate(80deg);
+  animation: blocOne 8s infinite linear;
+}
+
+.bloc3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #C4D1EC;
+  position: absolute;
+  top: 200px;
+  margin: 20px;
+  transform: rotate(80deg);
+  left: 50px;
+  animation: blocOne 7s infinite linear;
+}
+
+.bloc4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #C4D1EC;
+  position: absolute;
+  margin: 20px;
+  top: 350px;
+  transform: rotate(80deg);
+  animation: blocOne 9s infinite linear;
+}
+
+.bloc5 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #C4D1EC;
+  position: absolute;
+  margin: 20px;
+  top: 430px;
+  transform: rotate(80deg);
+  animation: blocOne 8s infinite linear;
+}
+
+.bloc6 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #C4D1EC;
+  position: absolute;
+  margin: 20px;
+  top: 20px;
+  transform: rotate(80deg);
+  animation: blocOne 7s infinite linear;
+}
+
+@keyframes blocOne {
+  from {
+    left: -300px;
+    transform: rotate(20deg);
+    opacity: 100%;
+  }
+
+  to {
+    left: 100%;
+    transform: rotate(200deg);
+    opacity: 0%;
+  }
+}
+
+/**********************************
+Responsivo
+**********************************/
+
+@media screen and (max-width: 1200px) {
+
+  .dados {
+    position: fixed !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 333px !important;
+    top: 21vh;
+    transition: all 2s;
+  
+  }
+}
+
+@media screen and (max-width: 997px) {
+
+  .dados {
+    position: fixed !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 333px !important;
+    top: 21vh;
+    transition: all 2s;
+  
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+body{
+  overflow-x: hidden !important;
+}
+
+.col-1{
+  display: none;
+}
+
+
+  .dados h1 {
+    font-weight: 900;
+    font-size: 100%;
+    color: #C4D1EC;
+    max-width: 100%; 
+  }
+
+  .tempo, .funcao {
+    background-color: #0e1a38;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .em-andamento {
+    background-color: rgb(13, 216, 13);
+    position: relative;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    cursor: pointer;
+  }
+
+  .icon-empresa {
+    max-width: 198px;
+    min-height: 44px;
+    background-image: url(./assets/Captura de tela 2024-08-15 232206.png);
+    background-size: cover;
+    background-position: center; 
+    border-radius: 10px;
+  }
+
+  .links {
+    gap: 20px;
+    max-width: 306px !important;
+    position: absolute;
+  }
+
+
+  .icon-empresa {
+    max-width: 250px;
+    min-height: 47px;
+    background-image: url(./assets/Captura de tela 2024-08-15 232206.png);
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    top: 71px;
+}
+.dados{
+  position: fixed !important;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  min-height: 241px !important;
+  top: 25vh;
+  transition: all 2s;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+  left: 34px;
+}
+
+.dados h1 {
+  font-weight: 900;
+  font-size: 210%;
+  color: #C4D1EC;
+  max-width: 100%;
+}
+
+.dados h2 {
+  position: relative;
+  top: -10px;
+  left: 6px;
+  font-weight: 700;
+  color: #C4D1EC;
+  font-size: 130%;
+}
+
+.dados p {
+  max-width: 349px;
+  position: relative;
+  font-size: 17px;
+  top: -2px;
+  left: 6px;
+  color: #C4D1EC;
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .line-projects {
+    color: white;
+    top: 100px !important;
+    position: relative;
+    right: 0px;
+    z-index: 999 !important;
+  }
+
+  .dados {
+    position: relative !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 241px !important;
+    top: 10vh;
+    transition: all 2s;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+    left: -59px;
+  }
+
+  .bloco {
+    width: 100%;
+    height: auto;
+    margin-bottom: 66px;
+  }
+
+}
+
+@media screen and (max-width: 507px) {
+  .dados {
+    position: relative !important;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 330px !important;
+    top: 10vh;
+    transition: all 2s;
+    left: -46px;
+  }
+
+  .skrill img {
+    width: 11%;
+    filter: invert(1);
+    opacity: 80%;
+    transition: all 0.3s;
+}
+
+.bloco {
+  width: 100%;
+  height: auto;
+  margin-bottom: 66px;
+}
+}
